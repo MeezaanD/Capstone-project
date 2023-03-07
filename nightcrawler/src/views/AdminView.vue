@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section id="shop-all">
+        <section id="admin">
          
         </section>
     </main>

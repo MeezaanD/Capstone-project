@@ -1,17 +1,52 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/LandingView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'landing',
     component: HomeView
   },
   {
     path: '/shop',
     name: 'shop',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ShopView.vue')
-  }
+    component: () => import('../views/ShopView.vue')
+  },
+  {
+    path: '/single',
+    name: 'single',
+    component: () => import('../views/SingleView.vue')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/ContactView.vue')
+  },
+  {
+    path: '/checkout',
+    name: 'checkout',
+    component: () => import('../views/CheckoutView.vue')
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import('../views/AdminView.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/LoginView.vue')
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('../views/RegisterView.vue')
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: () => import('../views/UserProfile.vue')
+  },
 ]
 
 const router = createRouter({

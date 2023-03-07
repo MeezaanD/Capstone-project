@@ -1,9 +1,7 @@
 <template>
-    <main>
-        <section id="shop-all">
-         
-        </section>
-    </main>
+    <div>
+        
+    </div>
 
   </template>
   
