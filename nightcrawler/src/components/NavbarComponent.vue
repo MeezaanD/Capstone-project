@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg fixed-top bg-danger-subtle">
+    <nav class="navbar navbar-expand-lg bg-danger-subtle" style="background-color: transparent;">
         <div class="container-fluid">
-            <img class="img-fluid" style="height: 5rem;" src="https://i.postimg.cc/65wLN7d3/nav.png" alt="">
+            <img class="img-fluid" style="height: 4rem;" src="https://i.postimg.cc/65wLN7d3/nav.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,4 +50,7 @@ export default {
 
 }
 </script>
-<style scoped></style>
+<style scoped>
+
+
+</style>
