@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-danger-subtle" style="background-color: transparent;">
+    <nav class="navbar navbar-expand-lg bg-dark-subtle" style="background-color: transparent; ">
         <div class="container-fluid">
             <img class="img-fluid" style="height: 4rem;" src="https://i.postimg.cc/65wLN7d3/nav.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -9,10 +9,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto" style="display: flex;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Shop
                         </a>
@@ -28,9 +28,9 @@
                         <a class="nav-link" href="/checkout">Checkout</a>
                     </li>
                 </ul>
-                <ul class="navbar ms-auto" style="list-style: none;">
+                <ul class="navbar-nav ms-auto" style="list-style: none;padding-:30px;">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             My Account
                         </a>
@@ -44,13 +44,36 @@
         </div>
     </nav>
 </template>
-
 <script>
 export default {
-
 }
 </script>
 <style scoped>
-
-
+.navbar {
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+.nav-link {
+    position: relative;
+    font-family: 'Special Elite', cursive;    
+    color: black;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgb(134, 131, 131);
+}
+.dropdown-item {
+    font-family: 'Tilt Warp', cursive;
+}
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.nav-link:hover::after {
+    opacity: 1;
+}
 </style>

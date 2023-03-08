@@ -18,4 +18,13 @@ export default {
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+
 </style>

@@ -4,7 +4,7 @@
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="https://i.postimg.cc/RVRhr2QQ/man.jpg" class="img-fluid" style="width: 100%;height:90vh" alt="...">
+            <img src="https://i.postimg.cc/3RggZmPj/bulb.jpg" class="img-fluid" style="width: 100%;height:90vh" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
@@ -29,47 +29,115 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
           data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
-
     <section id="about">
-      <div class="container">
-        <h2 class="text-center">About</h2>
+      <div class="about-c bg-dark-subtle">
+        <div class="container-shopping">
+            <h1 class="about-text">About Us</h1>
+          </div>
+        <p class="content">Nightcrawler is a gadget selling company that aims to combat power outages in South Africa. Our mission is to provide affordable, efficient, and sustainable solutions to the growing problem of power outages in the country. We have carefully designed our products to cater to the needs of our customers, while also being environmentally conscious.</p>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col-sm-4">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h4>Free Shipping</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In earum placeat nobis perferendis! Animi, facilis, laudantium aspernatur eos optio, suscipit numquam odio repellendus maiores perspiciatis quia incidunt quisquam inventore debitis.</p>
+            </div>
+            <div class="col-sm-4">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <h4>100% Money back</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In earum placeat nobis perferendis! Animi, facilis, laudantium aspernatur eos optio, suscipit numquam odio repellendus maiores perspiciatis quia incidunt quisquam inventore debitis.</p>
+            </div>
+            <div class="col-sm-4">
+              <i class="fa-solid fa-headset"></i>
+              <h4>Online Support</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In earum placeat nobis perferendis! Animi, facilis, laudantium aspernatur eos optio, suscipit numquam odio repellendus maiores perspiciatis quia incidunt quisquam inventore debitis.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <section id="sample">
-
+      <div class="product-c bg-dark-subtle">
+        <h1 class="product-text">Featured Products</h1>
+        <div class="card" style="width: 18rem;">
+          <img src="https://i.postimg.cc/QNTpBbhR/battery-charger.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="reach out">
-
     </section>
   </main>
+  <FooterComponent/>
 </template>
-
 <script>
-
-
+import FooterComponent from '@/components/FooterComponent.vue';
 export default {
-  components: {
-
-  }
+  components: { FooterComponent}
 }
 </script>
-
 <style scoped>
-
 #about {
-  height: 90vh;
-  background-color: blue;
+  height: auto;
 }
-
+.about-c, .product-c {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.container-shopping {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.about-text, .product-text {
+  font-family: 'Special Elite', cursive;
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 4px rgb(134, 131, 131);
+  position: relative;
+}
+.content {
+  font-family: 'Tilt Warp', cursive;
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+  font-size: larger;
+  text-shadow: 2px 2px 4px  rgb(134, 131, 131);
+  position: relative;
+  padding: 50px;
+}
+.about-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 43%;
+  bottom: -10px;
+  width: 14%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+}
+.product-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 25%;
+  bottom: -10px;
+  width: 50%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+}
 </style>
