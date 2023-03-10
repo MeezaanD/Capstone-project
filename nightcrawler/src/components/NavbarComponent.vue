@@ -32,7 +32,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            My Account
+                            Account
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/login">Login</a></li>
