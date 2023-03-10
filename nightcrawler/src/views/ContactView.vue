@@ -12,8 +12,9 @@
               <div class="screen-body">
                 <div class="screen-body-item left">
                   <div class="app-title">
-                    <!-- <img class="img-fluid" style="height:15rem; padding:20px;" src="https://i.postimg.cc/D0yFCVCf/transparent.png" alt=""> -->
+                    WHO ARE WE?
                   </div>
+                  <a href="/#about" class="btn btn-dark">About</a>
                   <div class="app-contact">
                     <h6 class="heading-text">Catch us on</h6>
                     <ul>
@@ -104,7 +105,7 @@ export default {
 /* Other */
 .background {
   display: flex;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .container {
@@ -128,6 +129,20 @@ input,
   font-weight: 700;
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   text-align: center;
+}
+
+.app-title {
+  font-family: 'Special Elite', cursive;
+  color: black;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(134, 131, 131);
+  text-align: center;
+  margin-top: 95px;
+}
+
+.btn {
+  margin-bottom: 20px;
+  width: auto;
 }
 
 .screen {

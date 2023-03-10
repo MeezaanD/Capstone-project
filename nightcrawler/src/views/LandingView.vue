@@ -51,7 +51,7 @@
         <div class="container text-center">
           <div class="row align-items-center">
             <div class="col-sm-6">
-              One of three columns
+              <img class="img-fluid" src="https://i.postimg.cc/mDnm7WYk/nav.png" alt="">
             </div>
             <div class="col-sm-6">
               <p class="content">Nightcrawler is a gadget selling company that aims to combat power outages in South Africa. Our
@@ -127,7 +127,22 @@
 
 
     <!-- REACH OUT STARTS -->
-    <section id="reach out">
+    <section id="reach-out">
+      <div class="banner">
+        <h1 class="contact-text">Reach Out</h1>
+      </div>
+      <div class="reach bg-dark-subtle text-center">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <h3 class="reach-text"> Some of our Sponsors include <i class="fa-solid fa-hand-point-right"></i> </h3>
+            <p class="reach-text">Get in hands with us at </p>
+            <a class="btn btn-dark" href="/contact">Contact</a>
+          </div>
+          <div class="col-8">
+            Gonna be images
+          </div>
+        </div>
+      </div>
     </section>
     <!-- REACH OUT ENDS -->
   </main>
@@ -140,13 +155,10 @@ export default {
 }
 </script>
 <style scoped>
-#about {
+#about, #sample, #reach-out {
   height: auto;
 }
 
-#sample {
-  height: auto;
-}
 
 .banner {
   background-color: black;
@@ -222,20 +234,18 @@ export default {
   overflow: hidden;
   position: relative;
 }
-.card {
-  padding: 30px;
-}
 
-.btn {
-  margin-top: 20px;
-}
 
+.container {
+  padding: 40px;
+}
 .image-box {
   position: relative;
   margin: auto;
   overflow: hidden;
   width: auto;
   padding: 30px;
+  max-height: 40vh;
 }
 
 .image-box img {
@@ -246,6 +256,7 @@ export default {
   width: 100%;
   height: auto;
   transform: scale(1);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 
 .image-box:hover img {
@@ -254,4 +265,38 @@ export default {
 
 
 /* Product Ends */
+
+/* Reach Start*/
+.contact-text {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(134, 131, 131);
+  position: relative;
+}
+
+.contact-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 40%;
+  bottom: -10px;
+  width: 19%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+
+.reach {
+  padding: 30px;
+}
+.reach-text {
+  font-family: 'Special Elite', cursive;
+  color: black;
+  text-shadow: 2px 2px 4px rgb(134, 131, 131);
+  position: relative;
+
+}
+
+
+/* Reach Ends */
 </style>

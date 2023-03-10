@@ -1,17 +1,14 @@
 <template>
  <NavbarComponent/>
  <main></main>
- <FooterComponent/>
   <router-view/>
 </template>
 
 <script>
 
 import NavbarComponent from '@/components/NavbarComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue'
-
 export default {
-  components: { NavbarComponent, FooterComponent }
+  components: { NavbarComponent}
 }
 </script>
 
@@ -24,6 +21,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  scroll-behavior: smooth;
 }
 
 

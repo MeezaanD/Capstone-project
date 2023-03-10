@@ -62,7 +62,7 @@ export default {
 .dropdown-item {
     font-family: 'Tilt Warp', cursive;
 }
-.nav-link::after {
+.nav-link::after, .dropdown-item::after {
     content: '';
     opacity: 0;
     transition: all 0.2s;
