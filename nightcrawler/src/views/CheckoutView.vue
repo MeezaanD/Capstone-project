@@ -1,3 +1,4 @@
+checkout
 <template>
   <main>
     <section id="checkout">
@@ -6,25 +7,21 @@
       </div>
     </section>
   </main>
+  <FooterComponent/>
 </template>
   
 <script>
-
-
+import FooterComponent from '@/components/FooterComponent.vue';
 export default {
-  components: {
-
-  }
+  components: { FooterComponent }
 }
 </script>
-
 <style scoped>
 .banner {
   background-color: black;
   height: 20vh;
   padding: 50px;
 }
-
 .checkout-text {
   font-family: 'Special Elite', cursive;
   text-align: center;
@@ -32,7 +29,6 @@ export default {
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   position: relative;
 }
-
 .checkout-text::after {
   content: "";
   position: absolute;

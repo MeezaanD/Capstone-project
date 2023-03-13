@@ -17,7 +17,7 @@
                   <a href="/#about" class="btn btn-dark">About</a>
                   <div class="app-contact">
                     <h6 class="heading-text">Catch us on</h6>
-                    <ul>
+                    <ul class="icons">
                       <a href="/" target="_blank">
                         <li class="list-items"><i class="fa-brands fa-instagram text-dark"></i></li>
                       </a>
@@ -67,11 +67,15 @@
       </form>
     </main>
   </section>
+  <FooterComponent/>
 </template>
 <script>
+import FooterComponent from '@/components/FooterComponent.vue';
+
 export default {
   components: {
-  }
+    FooterComponent
+}
 }
 </script>
 
@@ -165,14 +169,14 @@ input,
   z-index: -1;
 }
 
-ul {
+.icons {
   list-style: none;
   display: flex;
   gap: 2rem;
   font-size: 15px;
 }
 
-ul:a {
+.icons:a {
   color: black;
 }
 

@@ -2,43 +2,70 @@
   <main>
     <!-- HOME STARTS -->
     <section id="home">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="https://i.postimg.cc/3RggZmPj/bulb.jpg" class="img-fluid" style="width: 100%;max-height:90vh"
-              alt="...">
+            <img
+              src="https://i.postimg.cc/3RggZmPj/bulb.jpg"
+              class="img-fluid"
+              style="width: 100%; max-height: 90vh"
+              alt="..."
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://i.postimg.cc/nczbz5f1/city.jpg" class="img-fluid" style="width: 100%;max-height:90vh"
-              alt="...">
+            <img
+              src="https://i.postimg.cc/nczbz5f1/city.jpg"
+              class="img-fluid"
+              style="width: 100%; max-height: 90vh"
+              alt="..."
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://i.postimg.cc/jjC4nHdm/match.jpg" class="img-fluid" style="width: 100%;max-height:90vh"
-              alt="...">
+            <img
+              src="https://i.postimg.cc/jjC4nHdm/match.jpg"
+              class="img-fluid"
+              style="width: 100%; max-height: 90vh"
+              alt="..."
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev">
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next">
-        </button>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        ></button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        ></button>
       </div>
     </section>
     <!-- HOME ENDS -->
-
 
     <!-- ABOUT STARTS -->
     <section id="about">
@@ -51,17 +78,27 @@
         <div class="container text-center">
           <div class="row align-items-center">
             <div class="col-sm-6">
-              <img class="img-fluid" src="https://i.postimg.cc/mDnm7WYk/nav.png" alt="">
+              <img
+                class="img-fluid"
+                src="https://i.postimg.cc/mDnm7WYk/nav.png"
+                alt=""
+              />
             </div>
             <div class="col-sm-6">
-              <p class="content">Nightcrawler is a gadget selling company that aims to combat power outages in South Africa. Our
-                mission is to provide affordable, efficient, and sustainable solutions to the growing problem of power outages
-                in the country. We have carefully designed our products to cater to the needs of our customers, while also being
-                environmentally conscious. Nightcrawler is committed to providing sustainable and affordable solutions to
-                power outages in South Africa. Our products are designed with the needs of our
-                customers in mind, and we are confident that we will be able to meet the growing
-                demand for our products. We look forward to serving our customers and
-                contributing to the development of a sustainable future for South Africa.</p>
+              <p class="content">
+                Nightcrawler is a gadget selling company that aims to combat
+                power outages in South Africa. Our mission is to provide
+                affordable, efficient, and sustainable solutions to the growing
+                problem of power outages in the country. We have carefully
+                designed our products to cater to the needs of our customers,
+                while also being environmentally conscious. Nightcrawler is
+                committed to providing sustainable and affordable solutions to
+                power outages in South Africa. Our products are designed with
+                the needs of our customers in mind, and we are confident that we
+                will be able to meet the growing demand for our products. We
+                look forward to serving our customers and contributing to the
+                development of a sustainable future for South Africa.
+              </p>
             </div>
           </div>
         </div>
@@ -70,23 +107,32 @@
             <div class="col-sm-4">
               <i class="fa-solid fa-truck-fast"></i>
               <h4>Free Shipping</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In earum placeat nobis perferendis! Animi,
-                facilis, laudantium aspernatur eos optio, suscipit numquam odio repellendus maiores perspiciatis quia
-                incidunt quisquam inventore debitis.</p>
+              <p class="text-start">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                earum placeat nobis perferendis! Animi, facilis, laudantium
+                aspernatur eos optio, suscipit numquam odio repellendus maiores
+                perspiciatis quia incidunt quisquam inventore debitis.
+              </p>
             </div>
             <div class="col-sm-4">
               <i class="fa-solid fa-hand-holding-dollar"></i>
               <h4>100% Money back</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In earum placeat nobis perferendis! Animi,
-                facilis, laudantium aspernatur eos optio, suscipit numquam odio repellendus maiores perspiciatis quia
-                incidunt quisquam inventore debitis.</p>
+              <p class="text-start">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                earum placeat nobis perferendis! Animi, facilis, laudantium
+                aspernatur eos optio, suscipit numquam odio repellendus maiores
+                perspiciatis quia incidunt quisquam inventore debitis.
+              </p>
             </div>
             <div class="col-sm-4">
               <i class="fa-solid fa-headset"></i>
               <h4>Online Support</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In earum placeat nobis perferendis! Animi,
-                facilis, laudantium aspernatur eos optio, suscipit numquam odio repellendus maiores perspiciatis quia
-                incidunt quisquam inventore debitis.</p>
+              <p class="text-start">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                earum placeat nobis perferendis! Animi, facilis, laudantium
+                aspernatur eos optio, suscipit numquam odio repellendus maiores
+                perspiciatis quia incidunt quisquam inventore debitis.
+              </p>
             </div>
           </div>
         </div>
@@ -94,29 +140,31 @@
     </section>
     <!-- ABOUT ENDS -->
 
-
     <!-- SAMPLE STARTS -->
     <section id="sample">
       <div class="product-c bg-dark-subtle">
         <div class="banner">
           <h1 class="product-text">Featured Products</h1>
         </div>
-        <h3 class="sub-product">Shop now with our best selling products !</h3>
+        <h2 class="sub-product">Shop now with our best selling products !</h2>
         <div class="container text-center">
           <div class="row align-items-center">
             <div class="col-sm-4">
+              <h3 class="sub-product">Battery Charger</h3>
               <div class="image-box">
-                <img class="img-fluid" src="https://i.postimg.cc/QNTpBbhR/battery-charger.png">
+                <img class="img-fluid" src="https://i.postimg.cc/QNTpBbhR/battery-charger.png"/>
               </div>
             </div>
             <div class="col-sm-4">
+              <h3 class="sub-product">Portable Generator</h3>
               <div class="image-box">
-                <img class="img-fluid" src="https://i.postimg.cc/g01xdCXr/P-generator.png">
+                <img class="img-fluid" src="https://i.postimg.cc/g01xdCXr/P-generator.png"/>
               </div>
             </div>
             <div class="col-sm-4">
+              <h3 class="sub-product">UPS</h3>
               <div class="image-box">
-                <img class="img-fluid" src="https://i.postimg.cc/7ZN5HgRb/UPS.png">
+                <img class="img-fluid" src="https://i.postimg.cc/7ZN5HgRb/UPS.png"/>
               </div>
             </div>
           </div>
@@ -125,7 +173,6 @@
     </section>
     <!-- SAMPLE ENDS -->
 
-
     <!-- REACH OUT STARTS -->
     <section id="reach-out">
       <div class="banner">
@@ -133,13 +180,32 @@
       </div>
       <div class="reach bg-dark-subtle text-center">
         <div class="row align-items-center">
-          <div class="col-4">
-            <h3 class="reach-text"> Some of our Sponsors include <i class="fa-solid fa-hand-point-right"></i> </h3>
-            <p class="reach-text">Get in hands with us at </p>
-            <a class="btn btn-dark" href="/contact">Contact</a>
+          <div class="col-sm-4">
+            <h3 class="reach-text">
+              Some of our partners include
+              <i class="fa-solid fa-hand-point-right"></i>
+            </h3>
           </div>
-          <div class="col-8">
-            Gonna be images
+          <div class="col-sm-8">
+            <div class="row" style="margin-top:30px">
+              <div class="column">
+                <a href="https://lifechoices.co.za/" target="_blank">
+                  <img class="sponsor" src="https://i.postimg.cc/vHJyp5S3/LC.jpg" /></a>     
+              </div>
+              <div class="column">
+                <a href="https://www.energizer.com/" target="_blank">
+                  <img class="sponsor" src="https://i.postimg.cc/0QP2h7jL/energizer.jpg" /></a>        
+              </div>             
+              <div class="column">
+                <a href="https://www.fastway.co.za/" target="_blank">
+                  <img class="sponsor" src="https://i.postimg.cc/Qt8hfsnD/FW.jpg" /></a>
+              </div>
+              <div class="column">
+                <a href="https://www.gensol.co.za/" target="_blank">
+                  <img class="sponsor" src="https://i.postimg.cc/pTRCsbMj/images.png" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -149,16 +215,17 @@
   <FooterComponent />
 </template>
 <script>
-import FooterComponent from '@/components/FooterComponent.vue';
+import FooterComponent from "@/components/FooterComponent.vue";
 export default {
-  components: { FooterComponent }
-}
+  components: { FooterComponent },
+};
 </script>
 <style scoped>
-#about, #sample, #reach-out {
+#about,
+#sample,
+#reach-out {
   height: auto;
 }
-
 
 .banner {
   background-color: black;
@@ -174,19 +241,18 @@ export default {
   position: relative;
 }
 
-
 .about-text,
 .product-text,
 .sub-product {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   position: relative;
 }
 
-.content{
-  font-family: 'Tilt Warp', cursive;
+.content {
+  font-family: "Tilt Warp", cursive;
   margin-top: 15px;
   text-align: start;
   color: black;
@@ -218,7 +284,7 @@ export default {
   background: rgb(255, 255, 255);
 }
 .sub-product {
-  font-family: 'Tilt Warp', cursive;
+  font-family: "Tilt Warp", cursive;
   margin-top: 15px;
   text-align: center;
   color: black;
@@ -235,7 +301,6 @@ export default {
   position: relative;
 }
 
-
 .container {
   padding: 40px;
 }
@@ -250,25 +315,23 @@ export default {
 
 .image-box img {
   max-width: 100%;
-  padding: 20px;
   transition: all 0.3s;
   display: block;
   width: 100%;
   height: auto;
   transform: scale(1);
-  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
 .image-box:hover img {
   transform: scale(1.1);
 }
 
-
 /* Product Ends */
 
 /* Reach Start*/
 .contact-text {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
@@ -290,13 +353,57 @@ export default {
   padding: 30px;
 }
 .reach-text {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   color: black;
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   position: relative;
-
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.sponsor {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor:hover {
+  transform: scale(1.1);
+}
 
 /* Reach Ends */
 </style>
