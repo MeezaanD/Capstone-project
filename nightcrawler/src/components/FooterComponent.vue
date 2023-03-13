@@ -3,16 +3,17 @@ footer
 <template>
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="footer-col">
+      <div class="row text-start">
+        <div class="col">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/#home">Home</a></li>
             <li><a href="/#about">About</a></li>
+            <li><a href="/#admin">Admin</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="col">
           <h4>Account</h4>
           <ul>
             <li><a href="/profile">My Account</a></li>
@@ -20,7 +21,7 @@ footer
             <li><a href="/register">Register</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="col">
           <h4>Shopping</h4>
           <ul>
             <li><a href="/shop">Shop</a></li>
@@ -28,13 +29,13 @@ footer
             <li><a href="/checkout">Checkout</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="col">
           <h4>follow us</h4>
           <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -64,11 +65,11 @@ ul{
 	background-color: #24262b;
     padding: 70px 0;
 }
-.footer-col{
+.col{
    width: 25%;
    padding: 0 15px;
 }
-.footer-col h4{
+.col h4{
 	font-size: 18px;
 	color: white;
 	text-transform: capitalize;
@@ -76,7 +77,7 @@ ul{
 	font-weight: 500;
 	position: relative;
 }
-.footer-col h4::before{
+.col h4::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -86,10 +87,10 @@ ul{
 	box-sizing: border-box;
 	width: 50px;
 }
-.footer-col ul li:not(:last-child){
+.col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
-.footer-col ul li a{
+.col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: white;
@@ -99,11 +100,11 @@ ul{
 	display: block;
 	transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+.col ul li a:hover{
 	color: white;
 	padding-left: 8px;
 }
-.footer-col .social-links a{
+.col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -115,20 +116,31 @@ ul{
 	color: white;
 	transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+.col .info a{
+	display: block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+.col .social-links a:hover{
 	color: #24262b;
 	background-color: white;
 }
 
 /*responsive*/
 @media(max-width: 300px){
-  .footer-col{
+  .col{
     width: 50%;
     margin-bottom: 30px;
 }
 }
 @media(max-width: 300px){
-  .footer-col{
+  .col{
     width: 100%;
 }
 }

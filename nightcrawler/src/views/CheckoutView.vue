@@ -17,6 +17,11 @@ export default {
 }
 </script>
 <style scoped>
+
+#checkout {
+  height: 100vh;
+  background: rgb(184, 184, 184);
+}
 .banner {
   background-color: black;
   height: 20vh;

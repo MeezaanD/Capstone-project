@@ -28,7 +28,7 @@
                         <li class="list-items"><i class="fa-brands fa-twitter text-dark"></i></li>
                       </a>
                       <a href="/" target="_blank">
-                        <li class="list-items"><i class="fa-brands fa-tiktok text-dark"></i></li>
+                        <li class="list-items"><i class="fa-brands fa-linkedin text-dark"></i></li>
                       </a>
                     </ul>
                   </div>

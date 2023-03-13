@@ -22,19 +22,23 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/admin">Admin</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/checkout">Checkout</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto" style="list-style: none;padding-:30px;">
+                <ul class="navbar-nav ms-auto" style="list-style: none;padding:30px;">
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                           My Account
+                           Account
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/profile">My Account</a></li>
                             <li><a class="dropdown-item" href="/login">Login</a></li>
                             <li><a class="dropdown-item" href="/register">Register</a></li>
                         </ul>

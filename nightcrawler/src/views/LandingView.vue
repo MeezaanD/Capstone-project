@@ -108,30 +108,21 @@
               <i class="fa-solid fa-truck-fast"></i>
               <h4>Free Shipping</h4>
               <p class="text-start">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                earum placeat nobis perferendis! Animi, facilis, laudantium
-                aspernatur eos optio, suscipit numquam odio repellendus maiores
-                perspiciatis quia incidunt quisquam inventore debitis.
+                We offer free shipping for products over R350 and we also provide installation for addition cost of R200. Purchases under R350 will be required to collect from our local stores closest to you. 
               </p>
             </div>
             <div class="col-sm-4">
               <i class="fa-solid fa-hand-holding-dollar"></i>
               <h4>100% Money back</h4>
               <p class="text-start">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                earum placeat nobis perferendis! Animi, facilis, laudantium
-                aspernatur eos optio, suscipit numquam odio repellendus maiores
-                perspiciatis quia incidunt quisquam inventore debitis.
+               We offer a 30 day return policy where you are allowed to return your product if you are not satisfied, however if the item has been damaged we will not be obliged to accept the return of the product.
               </p>
             </div>
             <div class="col-sm-4">
               <i class="fa-solid fa-headset"></i>
               <h4>Online Support</h4>
               <p class="text-start">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                earum placeat nobis perferendis! Animi, facilis, laudantium
-                aspernatur eos optio, suscipit numquam odio repellendus maiores
-                perspiciatis quia incidunt quisquam inventore debitis.
+                We offer technical support on any issues operating the product regarding to installation or any issues you will run into. Our team can be contacted via email (infonightcrawler@gmail.com) and / or Contact line (021-345-6789)
               </p>
             </div>
           </div>
@@ -214,13 +205,18 @@
   </main>
   <FooterComponent />
 </template>
+
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 export default {
   components: { FooterComponent },
 };
 </script>
+
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 #about,
 #sample,
 #reach-out {
@@ -288,10 +284,10 @@ export default {
   margin-top: 15px;
   text-align: center;
   color: black;
-  font-size: larger;
+  font-size: 40px;
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   position: relative;
-  padding: 50px;
+  padding: 10px;
 }
 .product-c {
   padding: 0;

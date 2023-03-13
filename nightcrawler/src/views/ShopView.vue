@@ -5,15 +5,26 @@
         <h1 class="shop-text">Shop Now</h1>
       </div>
       <div class="container">
+        <div class="row align-items-end"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></div>
         <div class="row">
-          <div class="col-sm-4" >
-            <div class="buttons align-items-center" style="padding: 20px;display:grid; gap:10px;">  
+          <div class="col-sm-4">       
+            <div class="buttons align-items-center" style="padding: 20px;display:grid; gap:10px;">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark" type="submit">Search</button>
               </form>
-              <button class="btn btn-dark w-100">Filter</button>
               <button class="btn btn-dark w-100">Sort</button>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Filter By
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item bg-dark text-light" href="#">Low-Maintenance</a></li>
+                  <li><a class="dropdown-item bg-dark text-light" href="#">Medium-Maintenance</a></li>
+                  <li><a class="dropdown-item bg-dark text-light" href="#">High-Maintenance</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-sm-8" style="padding:0;margin:0">
@@ -57,23 +68,25 @@
       </div>
     </section>
   </main>
-  <FooterComponent/>
+  <FooterComponent />
 </template>
 <script>
 import FooterComponent from '@/components/FooterComponent.vue';
 export default {
-  components: { FooterComponent},
+  components: { FooterComponent },
 };
 </script>
 <style scoped>
 #shop-all {
   background: rgb(199, 199, 199);
 }
+
 .banner {
   background-color: black;
   height: 20vh;
   padding: 50px;
 }
+
 .shop-text {
   font-family: "Special Elite", cursive;
   text-align: center;
@@ -81,6 +94,7 @@ export default {
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   position: relative;
 }
+
 .shop-text::after {
   content: "";
   position: absolute;
@@ -91,25 +105,28 @@ export default {
   height: 2px;
   background: rgb(255, 255, 255);
 }
+
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(7px);
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: .5s ease;
 }
+
 .card:hover .overlay {
   height: 50%;
 }
+
 .text {
-  display:flex;
-  justify-content:center;
-  gap:5px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,7 +134,7 @@ export default {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .btn {
   width: 100px;
-}
-</style>
+}</style>
