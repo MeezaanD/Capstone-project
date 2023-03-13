@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row align-items-end"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></div>
         <div class="row">
-          <div class="col-sm-4">       
+          <div class="col-sm-4">
             <div class="buttons align-items-center" style="padding: 20px;display:grid; gap:10px;">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -29,7 +29,18 @@
           </div>
           <div class="col-sm-8" style="padding:0;margin:0">
             <div class="row row-cols-sm-4 gap-3" style="padding: 20px;justify-content:center">
-              <div class="card">
+              <div class="card" v-for="product in products" :key="product">
+                <img :src="product.imgURL" alt="Avatar" class="image-fluid">
+                <div class="overlay">
+                  <div class="text" style="display:flex;justify-content:center;gap:5px">
+                    <button class="btn btn-info">See More</button>
+                    <button class="btn btn-danger">Add to Cart</button>
+                  </div>
+                </div>
+                <h3>{{product.productName}}</h3>
+                <p>{{product.productPrice}}</p>
+              </div>
+              <!-- <div class="card">
                 <img src="https://i.postimg.cc/QNTpBbhR/battery-charger.png" alt="Avatar" class="image-fluid">
                 <div class="overlay">
                   <div class="text" style="display:flex;justify-content:center;gap:5px">
@@ -50,18 +61,7 @@
                 </div>
                 <h3>Battery Charger</h3>
                 <p>R1000</p>
-              </div>
-              <div class="card">
-                <img src="https://i.postimg.cc/QNTpBbhR/battery-charger.png" alt="Avatar" class="image-fluid">
-                <div class="overlay">
-                  <div class="text" style="display:flex;justify-content:center;gap:5px">
-                    <button class="btn btn-info">See More</button>
-                    <button class="btn btn-danger">Add to Cart</button>
-                  </div>
-                </div>
-                <h3>Battery Charger</h3>
-                <p>R1000</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -71,9 +71,19 @@
   <FooterComponent />
 </template>
 <script>
+import { computed } from '@vue/runtime-core'
+import { useStore } from 'vuex';
 import FooterComponent from '@/components/FooterComponent.vue';
+
 export default {
   components: { FooterComponent },
+  setup() {
+    const store = useStore()
+    store.dispatch("getProducts")
+    const products = computed(() => store.state.products)
+
+    return { products }
+  }
 };
 </script>
 <style scoped>
@@ -137,4 +147,5 @@ export default {
 
 .btn {
   width: 100px;
-}</style>
+}
+</style>
