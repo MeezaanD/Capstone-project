@@ -30,38 +30,16 @@
           <div class="col-sm-8" style="padding:0;margin:0">
             <div class="row row-cols-sm-4 gap-3" style="padding: 20px;justify-content:center">
               <div class="card" v-for="product in products" :key="product">
-                <img :src="product.imgURL" alt="Avatar" class="image-fluid">
+                <img :src="product.imgURL" style="height: 10rem;" class="image-fluid">
                 <div class="overlay">
                   <div class="text" style="display:flex;justify-content:center;gap:5px">
                     <button class="btn btn-info">See More</button>
                     <button class="btn btn-danger">Add to Cart</button>
                   </div>
                 </div>
-                <h3>{{product.productName}}</h3>
-                <p>{{product.productPrice}}</p>
+                <h3 class="product">{{product.productName}}</h3>
+                <p class="product">{{product.productPrice}}</p>
               </div>
-              <!-- <div class="card">
-                <img src="https://i.postimg.cc/QNTpBbhR/battery-charger.png" alt="Avatar" class="image-fluid">
-                <div class="overlay">
-                  <div class="text" style="display:flex;justify-content:center;gap:5px">
-                    <button class="btn btn-info">See More</button>
-                    <button class="btn btn-danger">Add to Cart</button>
-                  </div>
-                </div>
-                <h3>Battery Charger</h3>
-                <p>R1000</p>
-              </div>
-              <div class="card">
-                <img src="https://i.postimg.cc/QNTpBbhR/battery-charger.png" alt="Avatar" class="image-fluid">
-                <div class="overlay">
-                  <div class="text" style="display:flex;justify-content:center;gap:5px">
-                    <button class="btn btn-info">See More</button>
-                    <button class="btn btn-danger">Add to Cart</button>
-                  </div>
-                </div>
-                <h3>Battery Charger</h3>
-                <p>R1000</p>
-              </div> -->
             </div>
           </div>
         </div>
@@ -103,6 +81,13 @@ export default {
   color: white;
   text-shadow: 2px 2px 4px rgb(134, 131, 131);
   position: relative;
+}
+
+.product {
+  font-family: "Special Elite", cursive;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 4px rgb(134, 131, 131);
 }
 
 .shop-text::after {
